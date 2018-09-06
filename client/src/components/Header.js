@@ -11,9 +11,12 @@ const Header = props => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 20,
+    fontSize: 20
+  },
+  viewStyle: {
+    backgroundColor: "#F8F8F8",
     justifyContent: "center",
-    textAlign: "center",
+    alignItems: "center",
     height: 60,
     paddingTop: 20,
     shadowColor: "#000",
@@ -24,9 +27,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     elevation: 2,
     position: "relative"
-  },
-  viewStyle: {
-    backgroundColor: "#F8F8F8"
   }
 });
 
