@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import axios from "axios";
+import AlbumDetail from "./AlbumDetail";
 
 class AlbumList extends Component {
   constructor(props) {
@@ -21,16 +22,9 @@ class AlbumList extends Component {
 
   renderAlbums() {
     return this.state.albums.map((album, index) => (
-      <Text key={index}>{album.title}</Text>
+      <AlbumDetail key={index} album={album} />
     ));
   }
-
-  // {profile.skills.slice(0, 4).map((skill, index) => (
-  //   <li key={index} className="list-group-item">
-  //     <i className="fa fa-check pr-1" />
-  //     {skill}
-  //   </li>
-  // ))}
 
   render() {
     console.log(this.state.albums);
