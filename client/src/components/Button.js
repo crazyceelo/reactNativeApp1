@@ -6,10 +6,10 @@ const Button = props => {
   const { buttonStyle, textStyle } = styles;
 
   // props
-  const { onPress } = props;
+  const { onPress, children } = props;
   return (
     <TouchableOpacity style={buttonStyle} onPress={onPress}>
-      <Text style={textStyle}>Click Me!</Text>
+      <Text style={textStyle}>{children}</Text>
     </TouchableOpacity>
   );
 };
